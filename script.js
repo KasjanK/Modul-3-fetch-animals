@@ -23,7 +23,7 @@ function fetchCatImage() {
   fetch("https://aws.random.cat/meow")
     .then((response) => response.json())
     .then((data) => {
-      getImage.innerHTML = `<img src="${data.file}"/>`;
+      image.innerHTML = `<img src="${data.file}"/>`;
     });
 }
 
@@ -32,7 +32,7 @@ function fetchDogImage() {
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((response) => response.json())
     .then((data) => {
-      getImage.innerHTML = `<img src="${data.message}"/>`;
+      image.innerHTML = `<img src="${data.message}"/>`;
     });
 }
 
@@ -41,6 +41,6 @@ function fetchFoxImage() {
   fetch("https://randomfox.ca/floof/")
     .then((response) => response.json())
     .then((data) => {
-      getImage.innerHTML = `<img src="${data.image}"/>`;
+      image.innerHTML = `<img src="${data.image}"/>`;
     });
 }

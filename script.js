@@ -1,5 +1,5 @@
 // get the html element that displays an image
-const getImage = document.querySelector(".image");
+const image = document.querySelector(".image");
 // get the html element for the button
 const fetchButton = document.querySelector(".btn");
 
